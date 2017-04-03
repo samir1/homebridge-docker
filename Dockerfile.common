@@ -1,6 +1,6 @@
 #FROM debian:jessie
 #FROM resin/rpi-raspbian:jessie
-MAINTAINER Patrick Busch <p@trickbusch.de>
+MAINTAINER Samir
 
 RUN apt-get update
 
