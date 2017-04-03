@@ -46,7 +46,8 @@ RUN alias ll='ls -alG'
 #RUN npm install
 
 RUN npm install -g homebridge
-RUN npm install -g homebridge-openhab
+RUN npm install -g homebridge-particle
+RUN npm install -g homebridge-switchmate
 
 ##################################################
 # Start                                          #
@@ -58,7 +59,7 @@ USER root
 RUN mkdir -p /var/run/dbus
 #VOLUME /var/run/dbus
 
-EXPOSE 5353 51826
+EXPOSE 51826
 
 #CMD ["npm", "run", "start"]
 ADD run.sh /root/run.sh
