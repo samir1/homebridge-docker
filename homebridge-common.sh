@@ -7,6 +7,9 @@ if [ -z "$ACTION" ];
 fi
 
 _build() {
+  # Download config.json
+  wget https://gist.githubusercontent.com/samir1/0a9013e3466de6f4a5f0fba04a3a13b6/raw/891251cdc9a60213398cc1520b1b76e52cdf73f8/config.json
+
   # Generate Dockerfile
   echo $FROM > Dockerfile
   cat Dockerfile.common >> Dockerfile
